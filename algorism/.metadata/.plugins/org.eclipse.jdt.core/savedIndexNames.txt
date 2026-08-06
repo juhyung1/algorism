@@ -1,0 +1,21 @@
+INDEX VERSION 1.134+C:\Users\SSAFY\Desktop\java\algorism\algorism\.metadata\.plugins\org.eclipse.jdt.core
+1949989701.index
+2801894006.index
+1657330681.index
+2417467537.index
+247233859.index
+3326056083.index
+3890206838.index
+2042318293.index
+570284184.index
+1529056086.index
+2671694244.index
+1026111237.index
+3367554241.index
+1357516343.index
+3115947901.index
+1865797976.index
+2804077702.index
+1194066756.index
+2407940139.index
+2984411515.index
