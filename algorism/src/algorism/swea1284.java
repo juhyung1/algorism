@@ -11,39 +11,35 @@ public class swea1284 {
 		
 		for(int TEST_CASE = 1; TEST_CASE <= T; TEST_CASE++) {
 			
-			int normalLiterPerMoney = sc.nextInt(); // 1리터당 P원
-			int normalMoney = sc.nextInt();			// 기본요즘 Q원
-			int liter = sc.nextInt();				// 월간사용량 R리터이하
-			int literMoney = sc.nextInt();			// R보다 많은경우 초과량에 대해 1L당 S원
-			int userLiter = sc.nextInt();			// 내가 사용한 수도 양 W리터
 			
 			
+			int P = sc.nextInt();		// A사 1L당 P원
+			int Q = sc.nextInt();		// B사 월산사용량 R리터 이하 Q원 
+			int R = sc.nextInt();		// 월산사용량 R리터 이하
+			int S = sc.nextInt();		// B사 R리터 이상 1L당 S원
+			int W = sc.nextInt();		// 한달 간 사용하는 수도 양 W리터
 			
-			int AMoney = normalLiterPerMoney * userLiter;
-			int BMoney = 0;
+			int aWon = P * W; // A사 총 요금
+			int bWon = Q;
+			int result = aWon;
 			
-			if(userLiter <= liter) {
-				BMoney = normalMoney;
+			if(R < W) {
+				bWon = Q + (W - R) * S;
 			}
-			else if(userLiter > liter) {
-				BMoney = normalMoney + literMoney * (userLiter - liter);
-				}
 			
-			int result = 0;
-			if(AMoney >= BMoney) {
-				result = AMoney;
-			}
-			else if(AMoney < BMoney) {
-				result = BMoney;
+			
+			if(aWon >= bWon) {
+				result = bWon;
 			}
 			
 			System.out.println("#" + TEST_CASE + " " + result);
 			
 			
+			// P Q R S W
+			// 9 100 20 3 10
+			// 8 300 100 10 250
 			
-			
-			
-		}
+		} //tc
 
 	}
 
