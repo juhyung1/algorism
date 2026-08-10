@@ -34,15 +34,11 @@ public class swea1288 {
 				if(isOk) {
 					System.out.println("#" + test_case + " " + mul);
 					break;
-				}
-				
+				}				
 				count++;			
 
-			}
-
-		}
-		
-		
-	}
+			} // while
+		} // tc		
+	}// main
 
 }
