@@ -38,6 +38,7 @@ public class swea1959 {
 						max = result;
 					}
 				}
+				
 				else {
 					for(int j = 0; j < B; j++) {
 						result += arrA[j+i]*arrB[j];

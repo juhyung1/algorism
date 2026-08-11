@@ -20,6 +20,7 @@ public class swea1946 {
 			}
 			
 			System.out.println("#" + test_case);
+			
 			for(int i = 0; i < size; i++) {
 				for(int j = 0; j < num[i]; j++) {
 					System.out.print(alphabet[i]);
