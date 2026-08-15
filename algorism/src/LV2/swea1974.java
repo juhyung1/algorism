@@ -20,12 +20,14 @@ public class swea1974 {
 			
 			// 행 탐색
 			for(int i = 0; i < 9; i++) {
-				for(int j = 0; j < 8; j++) {
+				for(int j = 0; j < 8; j++) { // 마지막 8에서는 비교할 대상이 없음
+					
 					for(int k = j + 1; k < 9; k++) {
 						if(arr[i][j] == arr[i][k]) {
 							result = 0;
 						}						
 					} //k
+					
 				}//j
 			}//i
 			
@@ -41,6 +43,7 @@ public class swea1974 {
 				}//j
 			}//i
 			
+			// 8방 탐색
 			int[] dr = {-1, 1, 0, 0, -1, -1, 1, 1};
 			int[] dc = {0, 0, -1, 1, -1, 1, -1, 1};
 			
@@ -59,8 +62,6 @@ public class swea1974 {
 					
 				}
 			}
-			
-
 			
 			System.out.println("#" + test_case + " " + result);
 		}	//tc

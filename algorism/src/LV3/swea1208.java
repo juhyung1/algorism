@@ -22,8 +22,9 @@ public class swea1208 {
 			for(int i = 0; i < dump; i++) {
 				arr[0]++;
 				arr[99]--;
-				Arrays.sort(arr);
+					
 			}
+			
 			int result = arr[99] - arr[0];
 			
 			System.out.println("#" + test_case + " " + result);			

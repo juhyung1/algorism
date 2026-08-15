@@ -14,21 +14,54 @@ public class swea1979 {
 			int K = sc.nextInt(); // K글자
 			
 			int[][] arr = new int[N][N];
-			int count = 0;
 			
-			for(int i = 0; i < arr.length; i++) { // N*N 배열에 값 입력
-				for(int j = 0; j < arr[0].length; i++) {
+			int result = 0;
+			
+			for(int i = 0; i < N; i++) { // N*N 배열에 값 입력
+				for(int j = 0; j < N; j++) {
 					arr[i][j] = sc.nextInt();
 				}
 			}
 			
-			// 행열 탐색하면서 합이 N일때(그다음 블럭이 0이면 count++) 
 			
+			for(int i = 0; i < N; i++) { 
+				int count = 0;
+				for(int j = 0; j < N; j++) {
+					if(arr[i][j] == 1) { // 1일때 count
+						count++;						
+					}
+					else { // 1이 아닐 때(0일 때)
+						if(count == K) { // 0을 만나고 count 와 K가 같을때 전체 결과 +1
+							result++;
+						}
+						count = 0;
+						
+					}
+				}
+				if(count == K) { // 마지막이 1일 때 검사
+					result++;
+				}
+			}
 			
-			
-			
-			
-			
+			for(int j = 0; j < N; j++) { 
+				int count = 0;
+				for(int i = 0; i < N; i++) {
+					if(arr[i][j] == 1) { // 1일때 count
+						count++;						
+					}
+					else { // 1이 아닐 때(0일 때)
+						if(count == K) { // 0을 만나고 count 와 K가 같을때 전체 결과 +1
+							result++;
+						}
+						count = 0;
+						
+					}
+				}
+				if(count == K) { // 마지막이 1일 때 검사
+					result++;
+				}
+			}			
+			System.out.println("#" + test_case + " " + result);
 			
 		}//tc
 	}//main
