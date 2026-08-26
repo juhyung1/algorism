@@ -30,7 +30,7 @@ public class swea1979 {
 					if(arr[i][j] == 1) { // 1일때 count
 						count++;						
 					}
-					else { // 1이 아닐 때(0일 때)
+					else { // 0일 때
 						if(count == K) { // 0을 만나고 count 와 K가 같을때 전체 결과 +1
 							result++;
 						}

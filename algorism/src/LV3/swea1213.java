@@ -10,10 +10,10 @@ public class swea1213 {
 		for(int test_case = 1; test_case <= 10; test_case++) {
 			
 			int tc = sc.nextInt();
-			String find = sc.next();
+			String find = sc.next(); // 찾아야될
 			String sentence = sc.next();
 			
-			char[] newFind = find.toCharArray();
+			char[] newFind = find.toCharArray(); // 찾아야될
 			char[] newSentence = sentence.toCharArray();
 			
 			int fSize = newFind.length;	// 찾아야될 문자열 길이
@@ -36,9 +36,7 @@ public class swea1213 {
 				else {	// 글자가 다를 때
 					i = i - idx;
 					idx = 0;
-
-				}
-				
+				}				
 			}
 			
 			System.out.println("#" + tc + " " + count);

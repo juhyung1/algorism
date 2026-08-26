@@ -16,7 +16,7 @@ public class swea1974 {
 				}
 			}
 			
-			int result = 1;
+			int result = 1; // 스도쿠가 된다고 가정하고 시작
 			
 			// 행 탐색
 			for(int i = 0; i < 9; i++) {
