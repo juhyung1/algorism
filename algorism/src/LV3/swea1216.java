@@ -24,10 +24,11 @@ public class swea1216 {
 			
 			// 열 검사			
 			for(int leng = 100; leng >= 1; leng--) {
+//				boolean isOk = true;	여기에 선언하면 22번라인 BOOLEAN 변수 안해도됨
 				for (int i = 0; i < 100; i++) {
 					for (int j = 0; j <= 100 - leng; j++) {
 						boolean isOk = true;
-
+//						A B C B A
 						for (int k = 0; k < leng / 2; k++) {
 							if (arr[i][j + k] != arr[i][j + leng - 1 - k]) {
 								isOk = false;

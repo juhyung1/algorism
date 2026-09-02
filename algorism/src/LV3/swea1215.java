@@ -28,13 +28,11 @@ public class swea1215 {
 						if (arr[i][j + k] != arr[i][j + leng - 1 - k]) {
 							isOk = false;
 							break;
-						}
-						
+						}						
 					}
 					if (isOk) {
 						count++;
 					}
-
 				}
 			}
 

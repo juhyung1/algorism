@@ -42,10 +42,7 @@ public class swea1209 {
 			
 			int sum = 0;
 			// 대각선
-			for(int i = 0, j = 0;
-					i < 100 && j < 100;
-					i++, j++) {
-				
+			for(int i = 0, j = 0; i < 100 && j < 100; i++, j++) {				
 				sum += arr[i][j];
 			}
 			if(sum > max) {
@@ -53,9 +50,7 @@ public class swea1209 {
 			}
 			
 			sum = 0;
-			for(int i = 0, j = 99;
-					i < 100 && j >= 0;
-					i++, j--) {
+			for(int i = 0, j = 99; i < 100 && j >= 0; i++, j--) {
 				
 				sum += arr[i][j];
 			}

@@ -56,6 +56,8 @@ public class spider {
 						
 					}
 				}
+				
+				
 				if(count > max) {
 					max = count;
 					idxR = i;
