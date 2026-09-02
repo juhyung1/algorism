@@ -17,8 +17,7 @@ public class swea2001 {
 					arr[i][j] = sc.nextInt();
 				}
 			}
-			int row = 0;
-			int col = 0;
+
 
 			int max = 0;
 			
@@ -32,9 +31,7 @@ public class swea2001 {
 							sum += arr[x+i][y+j];						
 					}
 				}
-				if(sum > max) {
-					max = sum;
-				}
+				max = Math.max(max, sum);
 			}
 			}
 			System.out.println("#" + test_case + " " + max);

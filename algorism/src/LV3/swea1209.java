@@ -16,8 +16,7 @@ public class swea1209 {
 				for(int j = 0; j < 100; j++) {
 					arr[i][j] = sc.nextInt();
 				}
-			}
-			
+			}			
 			
 			int max = 0;
 			
