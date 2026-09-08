@@ -77,19 +77,4 @@ public class swea1232_사칙연산 {
 		return 0;		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

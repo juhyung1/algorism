@@ -28,6 +28,7 @@ public class swea1230_암호문3 {
 						queue.add(x + k, sc.nextInt());
 					}					
 					break;
+					
 				case 'D':
 					int a = sc.nextInt();
 					int b = sc.nextInt();
@@ -35,6 +36,7 @@ public class swea1230_암호문3 {
 						queue.remove(a);
 					}				
 					break;
+					
 				case 'A':
 					int q = sc.nextInt();
 					for(int k = 0; k < q; k++) {
