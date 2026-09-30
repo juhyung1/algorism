@@ -46,10 +46,6 @@ public class swea1231_중위순회 {
 			System.out.println();
 			
 			
-			
-			
-			
-			
 		}	//tc
 	}		//main
 }

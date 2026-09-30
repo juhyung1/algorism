@@ -1,11 +1,13 @@
-import java.util.*;
-class Solution
-{
-    public static void main(String args[]) throws Exception
-    {
-        Scanner sc = new Scanner(System.in);
-//      int T;
-//      T=sc.nextInt();
+package LV6;
+
+import java.util.ArrayDeque;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class swea1267_작업순서 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
  
         for(int test_case = 1; test_case <= 10; test_case++)
         {
@@ -48,5 +50,7 @@ class Solution
              
              System.out.println("#" + test_case + " " + sb);
         }
-    }
+
+	}
+
 }
