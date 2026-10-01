@@ -1,4 +1,5 @@
 package LV3;
+<<<<<<< HEAD
 import java.util.*;
 
 public class swea1244_최대상금 {
@@ -74,3 +75,14 @@ public class swea1244_최대상금 {
         arr[j] = temp;
     }
 }
+=======
+
+public class swea1244_최대상금 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+>>>>>>> b36b9b4 (1001)
